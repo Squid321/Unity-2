@@ -18,7 +18,8 @@ public class Flie : MonoBehaviour
         if (transform.position.z > topBound) {
             Destroy(gameObject);
         }
-        if (transform.position.z < lowBound) {
+        else if (transform.position.z < lowBound) {
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }

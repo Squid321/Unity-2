@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 2434914815802731146}
   - component: {fileID: 1078307837958311684}
   - component: {fileID: -3538420535575319833}
+  - component: {fileID: -5910528168976505805}
+  - component: {fileID: 2730387901252452745}
   m_Layer: 0
   m_Name: Animal_Chick
   m_TagString: Untagged
@@ -59,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 2345284063488602938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 11.71}
+  m_LocalPosition: {x: 0, y: -0.012, z: 11.71}
   m_LocalScale: {x: 1, y: 1, z: 0.09}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -102,6 +104,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  topBound: 30
+  lowBound: -10
+--- !u!65 &-5910528168976505805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345284063488602938}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.2, y: 6, z: 1}
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &2730387901252452745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345284063488602938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0512467cb31a24ea339f9a21b065e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2689402044690126810
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3462471241438640465}
   - component: {fileID: 3335351361269113738}
+  - component: {fileID: 7529348620693563964}
   m_Layer: 0
   m_Name: SA_Animal_Chick
   m_TagString: Untagged
@@ -322,6 +360,18 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000023841858, y: -0.34530044, z: 0.24290848}
     m_Extent: {x: 1.6054511, y: 2.9824944, z: 3.8762627}
   m_DirtyAABB: 0
+--- !u!114 &7529348620693563964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7444978584385790884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0512467cb31a24ea339f9a21b065e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8528497094482418482
 GameObject:
   m_ObjectHideFlags: 0
